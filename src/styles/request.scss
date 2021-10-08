@@ -1,0 +1,46 @@
+@use 'theme' as *;
+
+.center {
+	margin: 0 auto;
+}
+
+#method {
+	width: 100%;
+	margin: 0 auto;
+
+	.comboBoxPopover {
+		background-color: $popup-color;
+
+		&::-webkit-scrollbar {
+			width: 8px;
+			border-radius: 8px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: $border;
+			border-radius: 16px;
+		}
+		&::-webkit-scrollbar-thumb:hover {
+			background-color: $border-light;
+		}
+	}
+
+	.comboBoxInput {
+		@include input;
+		font-weight: 600;
+	}
+
+	.comboBoxList {
+		background-color: $popup-color;
+	}
+
+	.comboBoxOption {
+		background-color: $popup-color;
+		color: $text;
+	}
+
+	.highlighted {
+		color: $text-dark;
+		background-color: $bg-light;
+	}
+}
