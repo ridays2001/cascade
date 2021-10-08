@@ -1,0 +1,44 @@
+// Blacks
+$bg: #171717; // rgb(23, 23, 23)
+$bg-dark: #1c1c1e;
+$bg-light: #262626;
+
+$popup-color: #1b1b1b;
+
+$border: #262626;
+$border-light: #2d2d2d;
+$border-dark: #1f1f1f;
+
+// Whites
+$text: #a3a3a3; // rgb(163, 163, 163);
+$text-light: #737373; // rgb(115, 115, 115);
+$text-dark: #f5f5f5; // rgb(245, 245, 245)
+
+// Primary colors
+$primary-light: #818cf8; // rgb(129, 140, 248)
+$primary: #6366f1; // rgb(99, 102, 241)
+$primary-dark: #4f46e5; // rgb(79, 70, 229)
+
+$body: 'Noto Sans Display', sans-serif;
+$code: 'Fira Code', monospace;
+
+$transition: all 0.3s ease-in;
+
+@mixin input {
+	background-color: $bg-dark;
+	transition: $transition;
+	border: 2px solid $border;
+	color: $text;
+	border-radius: 8px;
+
+	&:focus {
+		background-color: transparent;
+		outline: none;
+		border-color: $border-light;
+		color: $text-dark;
+	}
+
+	&::placeholder {
+		color: rgba($text, 0.5);
+	}
+}
