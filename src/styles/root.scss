@@ -1,0 +1,29 @@
+@use 'theme' as *;
+
+body {
+	font-family: $body;
+	background-color: $bg;
+	color: $text;
+}
+
+code {
+	font-family: $code;
+}
+
+.container-fluid {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.loader {
+	display: flex;
+	width: 100%;
+	height: 95vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.c-input {
+	@include input;
+	padding: 8px;
+}
