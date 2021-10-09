@@ -1,5 +1,5 @@
 import React from 'react';
-import ReqBar from '../components/ReqBar';
+import ReqBar from './ReqBar';
 
 const Home = () => (
 	<div>

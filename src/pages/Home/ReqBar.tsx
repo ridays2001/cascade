@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { methods } from '../util/data';
+import { methods } from '../../util/data';
 import '../styles/request.scss';
-import ComboBox from './Combobox';
+import ComboBox from '../../components/Combobox';
 
 const ReqBar = () => (
 	<div className='row' style={{ justifyContent: 'center' }}>

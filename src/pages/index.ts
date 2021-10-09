@@ -1,7 +1,7 @@
 import type { LazyExoticComponent } from 'react';
 import { lazy } from 'react';
 
-const Home = lazy(() => import('./home'));
+const Home = lazy(() => import('./Home/HomePage'));
 
 interface RouteType {
 	exact?: boolean;
